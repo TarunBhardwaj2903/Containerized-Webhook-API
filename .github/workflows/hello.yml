@@ -1,0 +1,18 @@
+name: Simple GitHub Action Demo
+
+on:
+  workflow_dispatch:   # allows manual run
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 24f1002384@ds.study.iitm.ac.in
+        run: echo "Hello! This step contains my email ID."
+
+      - name: Final step
+        run: echo "GitHub Action ran successfully!"
